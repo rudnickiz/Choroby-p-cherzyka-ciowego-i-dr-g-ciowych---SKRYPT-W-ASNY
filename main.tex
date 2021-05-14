@@ -1,0 +1,73 @@
+\documentclass[polish,a4paper,10pt]{book}
+\usepackage[top=2cm,bottom=3cm,left=2cm,right=2cm]{geometry} 
+
+\usepackage{minitoc} 
+\usepackage{fancyhdr}
+
+%\RedeclareSectionCommand[%
+%tocindent=9em,tocnumwidth=7em,]{section}
+
+\usepackage{lmodern} 
+\usepackage[utf8]{inputenc}
+\usepackage[OT4]{polski}
+
+%kolorowanie naglowkow tabel
+\usepackage{color}
+\usepackage{colortbl}
+
+
+% jak ominąć datę po stronie tytułowej to wpisać jak niżej
+\date{\vspace{-5ex}}
+
+\usepackage{indentfirst}
+
+% jak ominąć datę po stronie tytułowej to wpisać jak niżej
+\date{\vspace{-5ex}}
+\usepackage{indentfirst}
+\setlength{\parindent}{1cm}
+\usepackage{graphicx}   % need for figures
+\usepackage{color, colortbl}   % use if color is used in text and tables !!!
+\usepackage{subfigure}  % use for side-by-side figures
+\usepackage{gensymb }
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{booktabs}
+
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{threeparttable}
+
+% zeby działały linki do sidewaysfigures!!
+\usepackage[hypcap=true]{caption}  % <==============
+\usepackage{rotating}
+\usepackage[pdftex]{hyperref}
+% zeby działały linki do sidewaysfigures!!
+
+\newcommand*{\DiEtp}{Definicja i etiopatogeneza}
+\newcommand*{\ObriP}{Obraz kliniczny i przebieg naturalny}
+\newcommand*{\Tx}{Leczenie}
+
+
+\title{Choroby pęcherzyka żółciowego i dróg żółciowych - skrypt własny}
+\author{Zbigniew Rudnicki}
+\makeindex
+\begin{document}
+	\maketitle
+	
+	%\listoftables
+	%\listoffigures
+	\tableofcontents
+	
+\input{Rozdzialy/Dysfunkcja_Oddiego}
+\input{Rozdzialy/Kamica_zolciowa}
+\input{Rozdzialy/Ostre_zapalenie_pecherzyka}
+\input{Rozdzialy/Ostre_zapalenie_drog_zolciowych}
+\input{Rozdzialy/pierwotne_stwardniajace_zapalenie_drog_zolciowych}
+\input{Rozdzialy/PSC}
+\input{Rozdzialy/Rak_pecherzyka}
+\input{Rozdzialy/Rak_drog_zolciowych}
+\input{Rozdzialy/Rak_Vatera}
+
+\printindex
+\end{document} 
+
